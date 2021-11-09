@@ -195,9 +195,10 @@ class HealthCertificate
      */
     public function isCovered(string $target, int $types): bool
     {
-        if ($this->isExpired()) {
-            return false;
-        }
+//        if ($this->isExpired()) {
+//            return false;
+//        }
+
 
         if ($types & self::TYPE_VACCINATION) {
             foreach ($this->vaccinationEntries as $vaccinationEntry) {
